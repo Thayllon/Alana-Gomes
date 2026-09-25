@@ -1,0 +1,25 @@
+# Alana Gomes — Engenharia Civil
+
+Landing page em `D:\projetos\alana-gomes\index.html`
+Abrir com duplo clique ou `npx serve .` na pasta.
+
+## Onde colocar as fotos (as 10 que você mandou no chat não vieram como arquivo, salve manualmente)
+
+- `assets/logo.png` — logo Alana Gomes (a imagem verde que você mandou)
+- `assets/fotos/hero-trena.jpg` — foto clara com trena (hero)
+- `assets/fotos/sobre-planta.jpg` — foto clara lendo planta (sobre)
+
+O site já funciona sem elas (mostra fundo claro elegante). Quando salvar com esses nomes exatos, elas aparecem automaticamente já tratadas para tema claro.
+
+Fotos escuras (blazer preto/vermelho): guarde em `assets/fotos/` como `escura-1.jpg` etc. Posso criar depois uma faixa escura de autoridade com elas se quiser.
+
+## Contatos configurados
+- WhatsApp: https://wa.me/5535997026545 (com texto pronto por serviço)
+- Instagram: https://www.instagram.com/alanagomesengenharia/
+- Email: alanaenggomes@gmail.com
+- Google: https://share.google/x6Y1Fo9HlfhNYLAMX
+
+## Falta para v2 (quando tiver)
+1. CREA
+2. 3 depoimentos reais do Google para trocar os placeholders
+3. Place ID do Google para widget automático

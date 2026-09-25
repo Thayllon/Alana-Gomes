@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alana Gomes | Engenharia Civil em Varginha e região</title>
+<meta name="description" content="Gerenciamento de obra, projeto estrutural, regularização de imóveis residenciais e AVCB em Varginha e região (50-100km). Fale no WhatsApp." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#3A3D38',
+        sage: '#646256',
+        sagemuted: '#757C6B',
+        cream: '#FAF9F6',
+        sand: '#E8E4DA',
+        dark: '#2E2E2B'
+      },
+      fontFamily: {
+        serif: ['Fraunces', 'serif'],
+        sans: ['Jost', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="assets/logo.png" />
+<meta property="og:title" content="Alana Gomes | Engenharia Civil" />
+<meta property="og:description" content="Obra segura, documentada e sem dor de cabeça em Varginha e região." />
+<meta property="og:type" content="website" />
+</head>
+<body class="bg-cream text-ink font-sans antialiased">
+
+<!-- HEADER -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 glass-header">
+  <div class="header-inner max-w-6xl mx-auto px-5 py-3 flex items-center justify-between gap-4">
+    <a href="#inicio" class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="Alana Gomes Engenharia Civil" class="h-10 w-auto object-contain" onerror="this.style.display='none'" />
+      <span class="leading-tight">
+        <span class="block font-serif tracking-[0.22em] text-sage text-sm md:text-base">ALANA GOMES</span>
+        <span class="block text-[10px] md:text-[11px] tracking-[0.3em] text-sagemuted">ENGENHARIA CIVIL</span>
+      </span>
+    </a>
+    <div class="flex items-center gap-6">
+      <nav class="hidden md:flex items-center gap-7 text-sm">
+        <a href="#servicos" class="hover:text-sage">Serviços</a>
+        <a href="#sobre" class="hover:text-sage">Sobre</a>
+        <a href="#contato" class="hover:text-sage">Contato</a>
+      </nav>
+      <a href="https://www.instagram.com/alanagomesengenharia/" target="_blank" rel="noopener" aria-label="Instagram" class="icon-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <button id="menuBtn" class="md:hidden icon-btn" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden px-5 pb-4 flex-col gap-3 text-sm bg-cream/95 backdrop-blur">
+    <a href="#servicos" class="py-2 border-b border-sand">Serviços</a>
+    <a href="#sobre" class="py-2 border-b border-sand">Sobre</a>
+    <a href="#contato" class="py-2">Contato</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero-no-photo px-5">
+  <div class="hero-blueprint" aria-hidden="true"></div>
+  <span class="loc-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+    Varginha e região</span>
+  <div class="max-w-3xl mx-auto text-center relative">
+    <div>
+      <h1 class="font-serif text-sage text-4xl md:text-6xl leading-tight mt-4">Obra segura, documentada e <mark class="hl">sem dor de cabeça</mark>.</h1>
+      <p class="mt-5 text-lg text-ink/80 max-w-2xl mx-auto">Gerenciamento de obra, projeto estrutural e regularização de imóveis. Você fala direto com a engenheira e recebe proposta clara de prazo e valor.</p>
+      <div class="mt-7 flex flex-col items-center gap-2">
+        <a class="btn-whats text-lg" target="_blank" rel="noopener" href="https://wa.me/5535997026545?text=Ol%C3%A1%20Alana!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento.">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.2-5.1-4.4-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l.8-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4 0 .1 0 .5-.5 1.2Z"/></svg>
+          Pedir orçamento no WhatsApp</a>
+      </div>
+      <div class="mt-8 flex flex-wrap justify-center gap-3 text-sm">
+        <a class="hero-chip" href="#servicos">Gerenciamento de obra</a>
+        <a class="hero-chip" href="#servicos">Projeto estrutural</a>
+        <a class="hero-chip" href="#servicos">Regularização + AVCB</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DORES -->
+<section class="px-5 py-12">
+  <div class="max-w-6xl mx-auto glass-panel p-8 md:p-12 dores-destaque">
+    <h2 class="font-serif text-sage text-3xl md:text-5xl text-center leading-tight mt-4">Sua obra trava por burocracia<br class="hidden md:block" /> ou falta de gestão?</h2>
+    <p class="text-center text-ink/70 mt-2">Isso normalmente acontece quando:</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-7">
+      <div class="mini-card hover-card"><span class="card-progress"></span><span class="card-arrow">→</span><p>Obra sem gestão estoura <strong>prazo e custo</strong></p></div>
+      <div class="mini-card hover-card"><span class="card-progress"></span><span class="card-arrow">→</span><p>Projeto estrutural <strong>sem responsabilidade técnica</strong></p></div>
+      <div class="mini-card hover-card"><span class="card-progress"></span><span class="card-arrow">→</span><p>Imóvel residencial <strong>sem escritura / averbação</strong></p></div>
+      <div class="mini-card hover-card"><span class="card-progress"></span><p>AVCB <strong>reprovado ou vencido</strong> trava uso e venda</p></div>
+    </div>
+    <p class="dores-close">O problema não é construir. É construir <mark class="hl">sem condução técnica</mark>.</p>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="services-band px-5 py-14">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-serif text-sage text-3xl md:text-4xl mt-3">Como posso te ajudar?</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-7">
+      <article class="service-card hover-card">
+        <span class="card-progress"></span>
+        <span class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4a3 3 0 0 1 6 0"/><path d="M9 11l2 2 4-4"/></svg>
+        </span>
+        <h3>Gerenciamento de obra</h3>
+        <p>Planejamento, cronograma, controle de custos, equipes e qualidade. Você acompanha tudo sem precisar ir à obra todo dia.</p>
+        <ul><li>Cronograma e orçamento controlados</li><li>Gestão de equipes e fornecedores</li><li>Relatórios e vistorias periódicas</li></ul>
+      </article>
+      <article class="service-card hover-card">
+        <span class="card-progress"></span>
+        <span class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+        </span>
+        <h3>Projetos complementares — Estrutural</h3>
+        <p>Projeto estrutural seguro, econômico e executável, compatível com arquitetônico, elétrico e hidrossanitário.</p>
+        <ul><li>Dimensionamento e detalhamento</li><li>Compatibilização de projetos</li><li>ART e responsabilidade técnica</li></ul>
+      </article>
+      <article class="service-card hover-card">
+        <span class="card-progress"></span>
+        <span class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/><path d="M12 21v-4"/></svg>
+        </span>
+        <h3>Regularização de imóveis</h3>
+        <p>Documentação para escritura, averbação, habite-se e registro. Sem papelada certa você não financia, não vende e não herda em paz.</p>
+        <ul><li>Residencial: análise documental, averbação e habite-se</li><li>Condução junto a cartório e prefeitura</li><li>Comercial: AVCB e exigências do Corpo de Bombeiros</li></ul>
+      </article>
+    </div>
+    <div class="cta-band cta-soft">
+      <p><strong>Não sabe qual serviço você precisa?</strong> Me conta seu caso que eu te oriento.</p>
+      <a class="btn-whats" target="_blank" rel="noopener" href="https://wa.me/5535997026545?text=Ol%C3%A1%20Alana!%20N%C3%A3o%20sei%20qual%20servi%C3%A7o%20preciso.%20Meu%20caso%20%C3%A9%3A">Pedir orientação no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="px-5 py-10">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center glass-panel p-7 md:p-10">
+    <div class="sobre-photo-wrap hero-clean">
+      <img src="assets/fotos/sobre-planta.jpg" alt="Alana Gomes analisando projeto" class="sobre-photo" onerror="this.style.display='none'" />
+    </div>
+    <div>
+      <h2 class="font-serif text-sage text-3xl mt-3">Prazer, Alana Gomes</h2>
+      <p class="mt-3 text-ink/80">Engenheira civil em Varginha/MG. Atuo com gerenciamento de obras, projetos estruturais e regularização de imóveis — do papel à entrega, com comunicação clara no WhatsApp.</p>
+      <ul class="check-list mt-4">
+        <li>Atendimento direto, sem intermediário</li>
+        <li>Documentação e ART inclusas onde aplicável</li>
+        <li>Foco em prazo, custo e segurança jurídica</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="px-5 py-12">
+  <div class="max-w-6xl mx-auto glass-panel p-8 md:p-12 dores-destaque">
+    <h2 class="font-serif text-sage text-3xl md:text-5xl text-center leading-tight">Como funciona?</h2>
+    <div class="steps-flow mt-8 text-left">
+      <div class="step-card hover-card step-shell"><span class="card-progress"></span><div class="step-head"><span class="card-num">01</span><h3>Chame no WhatsApp</h3></div><p>Me conta seu caso em 1 minuto. Respondo com as primeiras orientações.</p></div>
+      <div class="step-arrow" aria-hidden="true"><span>→</span></div>
+      <div class="step-card hover-card step-shell"><span class="card-progress"></span><div class="step-head"><span class="card-num">02</span><h3>Visita e orçamento</h3></div><p>Análise técnica presencial ou online + proposta clara de prazo e valor.</p></div>
+      <div class="step-arrow" aria-hidden="true"><span>→</span></div>
+      <div class="step-card hover-card step-shell"><span class="card-progress"></span><div class="step-head"><span class="card-num">03</span><h3>Execução e entrega</h3></div><p>Obra gerenciada ou documento entregue, com acompanhamento até o fim.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="px-5 pt-10 pb-0">
+  <div class="max-w-6xl mx-auto glass-panel contato-fade p-7 md:p-12 text-center">
+    <h2 class="font-serif text-sage text-3xl md:text-4xl">Vamos resolver sua obra ou patrimônio?</h2>
+    <p class="mt-3 text-ink/70">Me chama no WhatsApp hoje e receba a primeira orientação <strong>sem custo</strong>. Vagas de visita por semana são limitadas.</p>
+    <a class="btn-whats text-lg mt-6 inline-flex" target="_blank" rel="noopener" href="https://wa.me/5535997026545?text=Ol%C3%A1%20Alana!%20Vim%20pelo%20site.">QUERO UM ORÇAMENTO</a>
+    <div class="mt-5 flex justify-center items-center gap-3 text-sm">
+      <a class="social-link hover:text-sage" target="_blank" rel="noopener" href="https://www.instagram.com/alanagomesengenharia/">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+        Instagram</a>
+      <span class="text-sand">|</span>
+      <a class="social-link hover:text-sage" target="_blank" rel="noopener" href="https://share.google/x6Y1Fo9HlfhNYLAMX">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.3H12v4.5h6.5c-.1 1.1-.8 2.7-2.4 3.8l-.1.1 3.5 2.7.2.1c2.2-2 3.8-5 3.8-8.9z"/><path fill="#34A853" d="M12 24c3.2 0 5.9-1.1 7.9-2.9l-3.8-2.9c-1 .7-2.4 1.2-4.1 1.2-3.1 0-5.8-2.1-6.8-5l-.1.1-3.6 2.8v.1C3.5 21.3 7.5 24 12 24z"/><path fill="#FBBC05" d="M5.2 14.4c-.2-.7-.4-1.5-.4-2.4s.1-1.7.4-2.4l-.1-.1-3.6-2.8-.1.1C.5 8.7 0 10.2 0 12s.5 3.3 1.4 4.7l3.8-2.3z"/><path fill="#EA4335" d="M12 4.7c1.8 0 3 .8 3.7 1.4l3.3-3.2C17.9 1.1 15.2 0 12 0 7.5 0 3.5 2.7 1.4 6.7l3.8 2.9c1-2.8 3.7-4.9 6.8-4.9z"/></svg>
+        Google</a>
+      <span class="text-sand">|</span>
+      <a class="social-link hover:text-sage" href="mailto:alanaenggomes@gmail.com?subject=Or%C3%A7amento%20pelo%20site">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        E-mail</a>
+    </div>
+  </div>
+</section>
+
+<footer class="px-5 pb-10 pt-8 text-center text-xs text-ink/60">
+  <p class="font-serif tracking-[0.22em] text-sage">ALANA GOMES — ENGENHARIA CIVIL</p>
+  <p class="mt-2">Todos os direitos reservados © 2026 • Desenvolvido por Thayllon Gomes <a class="linkedin-mini" target="_blank" rel="noopener" href="https://br.linkedin.com/in/thayllon-gomes-4b6856173" aria-label="LinkedIn de Thayllon Gomes"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a></p>
+</footer>
+
+<!-- FLUTUANTE -->
+<a id="waFloat" target="_blank" rel="noopener" href="https://wa.me/5535997026545?text=Ol%C3%A1%20Alana!%20Vim%20pelo%20site." aria-label="Chamar no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.2-5.1-4.4-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l.8-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4 0 .1 0 .5-.5 1.2Z"/></svg>
+  <span class="wa-tip">Olá! Como posso ajudar?</span>
+</a>
+
+<script src="script.js"></script>
+<!-- barra fixa mobile -->
+<div id="stickyCta">
+  <a target="_blank" rel="noopener" href="https://wa.me/5535997026545?text=Ol%C3%A1%20Alana!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento.">Pedir orçamento no WhatsApp</a>
+</div>
+</body>
+</html>
