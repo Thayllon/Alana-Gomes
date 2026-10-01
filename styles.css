@@ -81,7 +81,7 @@ body{background:radial-gradient(1200px 500px at 80% -10%, #EFEDE4 0%, transparen
 .step-card .card-num{font-family:Fraunces,serif;font-size:34px;color:var(--muted);display:block}
 .step-head{display:flex;align-items:center;gap:12px;flex-wrap:nowrap}
 .step-head .card-num{font-size:28px;flex-shrink:0}
-.step-head h3{font-weight:700;font-size:18px;white-space:nowrap}
+.step-head h3{font-weight:700;font-size:18px}
 @media(max-width:1100px){.step-head h3{white-space:normal}}
 .step-head .card-num{font-size:28px;flex-shrink:0}
 .step-head h3{font-weight:700}
@@ -125,10 +125,7 @@ body{background:radial-gradient(1200px 500px at 80% -10%, #EFEDE4 0%, transparen
 .cta-soft p{font-size:17px}
 section + section{margin-top:6px}
 .cta-band p{margin:0;color:rgba(58,61,56,.8)}
-#stickyCta{display:none}
 @media(max-width:768px){
-  #stickyCta{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:55}
-  #stickyCta a{display:flex;align-items:center;justify-content:center;background:#1FA855;color:#fff;font-weight:600;padding:15px;border-radius:16px;box-shadow:0 12px 30px rgba(31,168,85,.45)}
   footer{padding-bottom:90px}
 }
 .social-link{display:inline-flex;align-items:center;gap:6px}
